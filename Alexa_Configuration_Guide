@@ -1,0 +1,14 @@
+Configure Alexa to Work with Arduino IoT Cloud
+Enable the Arduino IoT Cloud Skill in Alexa:
+
+Open the Alexa app on your smartphone or go to the Alexa Skills Store on your computer.
+Search for the "Arduino IoT Cloud" skill.
+Click "Enable" to add the skill to your Alexa account.
+Link Your Arduino Account to Alexa:
+
+After enabling the skill, you will be prompted to link your Arduino account.
+Log in with your Arduino credentials and grant permission for Alexa to access your Arduino IoT Cloud data.
+Discover Devices:
+
+Once the accounts are linked, Alexa will automatically discover the devices and variables from your Arduino IoT Cloud account.
+You can also manually discover devices by saying, “Alexa, discover my devices.”
