@@ -1,0 +1,37 @@
+'ARDUINO IOT CLOUD'   link : https://cloud.arduino.cc/
+Step-by-Step Guide to Creating an Account and Widgets in Arduino IoT Cloud
+1. Create an Arduino IoT Cloud Account
+Visit the Arduino IoT Cloud Website: Open your web browser and go to the Arduino IoT Cloud.
+Sign Up or Log In: If you don't have an Arduino account, click on "Sign Up" to create a new account. If you already have an account, click "Log In" and enter your credentials.
+2. Set Up a New Thing
+Create a New Thing: After logging in, click on the "Create Thing" button.
+Name Your Thing: Give your Thing a meaningful name that reflects its purpose.
+Add a Device: Click on "Select Device" to add your Arduino board.
+Choose Your Device: Select your board from the list of supported devices.
+Set Up Your Device: Follow the on-screen instructions to connect your board to the Arduino IoT Cloud. This usually involves installing the Arduino Create Agent and connecting your board via USB.
+3. Define Variables
+Add Variables: Click on the "Add Variable" button to define the variables your Thing will use.
+Variable Name: Give a descriptive name to each variable (e.g., temperature, humidity,light,fan).
+Variable Type: Choose the appropriate type (e.g., Float, Boolean, Integer).
+Variable Permission: Set the permission (e.g., Read & Write, Read Only).
+Variable Update Policy: Choose how often the variable should be updated (e.g., On Change, Periodic).
+4. Generate and Customize the Sketch
+Auto-Generated Sketch: The Arduino IoT Cloud will generate a basic sketch based on the variables you defined.
+Open in Arduino Web Editor: Click on "Open full editor" to open the sketch in the Arduino Web Editor.
+Customize the Sketch: Modify the sketch as needed to include your specific sensor readings and control logic.
+Upload the Sketch: Connect your Arduino board to your computer via USB and click "Upload" to upload the sketch to your board.
+5. Create a Dashboard and Add Widgets
+Create a Dashboard: Navigate to the "Dashboards" section and click "Create Dashboard".
+Name Your Dashboard: Give your dashboard a meaningful name.
+Add Widgets: Click on the "+" button to add widgets to your dashboard.
+Select Widget Type: Choose the type of widget you want to add (e.g., Value, Switch, Slider, Chart).
+Configure Widget: Link the widget to the corresponding variable in your Thing.
+Value Widget: Display numerical values like temperature or humidity.
+Switch Widget: Turn devices on or off.
+Slider Widget: Adjust values like brightness or motor speed.
+Chart Widget: Visualize data trends over time.
+Customize Widgets: Customize the appearance and functionality of each widget as needed.
+6. Monitor and Control Your Devices
+Access Your Dashboard: Open the dashboard you created on your computer or mobile device.
+Real-Time Monitoring: View real-time data from your sensors and devices.
+Control Devices: Use the widgets to send commands to your actuators.
