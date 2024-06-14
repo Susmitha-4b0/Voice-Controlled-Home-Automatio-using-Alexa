@@ -1,0 +1,39 @@
+#include "thingProperties.h"
+// Define the pins for the relays
+const int relaypin1 = D1; // Connect to Pin D1 in NodeMCU
+const int relaypin2 = D2; // Connect to Pin D2 in NodeMCU
+void setup() {
+  // Initialize serial and wait for port to open:
+  Serial.begin(9600);
+  // This delay gives the chance to wait for a Serial Monitor without blocking if none is found
+  delay(1500); 
+  
+  // Defined in thingProperties.h
+  initProperties();
+  
+  // Connect to Arduino IoT Cloud
+  ArduinoCloud.begin(ArduinoIoTPreferredConnection);
+
+  setDebugMessageLevel(2);
+  ArduinoCloud.printDebugInfo();
+  
+  // Initialize the relay pins as outputs
+  pinMode(relaypin1, OUTPUT);
+  pinMode(relaypin2, OUTPUT);
+  
+  // Initialize relay states (optional)
+  digitalWrite(relaypin1, LOW);
+  digitalWrite(relaypin2, LOW);
+ }
+
+void loop() {
+  ArduinoCloud.update();
+ }
+
+void onFanChange()  {
+  digitalWrite(relaypin2, fan ? HIGH : LOW);
+}
+
+void onLightChange()  {
+  digitalWrite(relaypin1, light ? HIGH : LOW);
+  }
